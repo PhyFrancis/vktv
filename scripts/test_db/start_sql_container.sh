@@ -1,5 +1,9 @@
 #! /bin/bash
 
+# First kill all existing docker containers
+. delete_all_containers.sh
+
+# Then start the sql container
 container_name="my-mysql"
 MYSQL_ROOT_PASSWORD="seasteading"
 MYSQL_DATABASE="vkp" # virtual ktv platform
@@ -13,4 +17,4 @@ docker run \
   -e MYSQL_USER=${MYSQL_USER} \
   -e MYSQL_PASSWORD=${MYSQL_PASSWORD} \
   -v $PWD/sql:/docker-entrypoint-initdb.d \
-  -d mysql:5.7
+  -d -p=3306:3306 mysql:5.7
