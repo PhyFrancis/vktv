@@ -3,8 +3,11 @@
 
 [java]
   src_roots = /java/
-  source_level = 6
-  target_level = 6
+  source_level = 8
+  target_level = 8
 
 [project]
   ide = intellij
+
+[download]
+  in_build = true
