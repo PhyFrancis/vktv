@@ -1,0 +1,10 @@
+[alias]
+  hello_buck_java = //java/com/vktv:hello-buck-java
+
+[java]
+  src_roots = /java/
+  source_level = 6
+  target_level = 6
+
+[project]
+  ide = intellij
