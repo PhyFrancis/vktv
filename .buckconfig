@@ -11,3 +11,6 @@
 
 [download]
   in_build = true
+
+[maven_repositories]
+  central = https://oss.sonatype.org/content/repositories/releases/

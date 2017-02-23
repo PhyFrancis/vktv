@@ -14,3 +14,9 @@ java_library(
     name = "main",
     srcs = glob(["*.java"]),
 )
+
+remote_file(
+  name = "jooq",
+  url = "mvn:org.jooq:jooq:jar:3.9.0",
+  sha1 = "0f8258ec9cd4ef8622e1f75084c51702ee9a5bb9",
+)
