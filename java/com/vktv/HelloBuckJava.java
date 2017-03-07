@@ -8,7 +8,7 @@
 
 package com.vktv;
 
-import org.jooq.*;
+import org.jooq.Context;
 
 public class HelloBuckJava {
   public static void main(String[] args) {

@@ -20,11 +20,11 @@ java_library(
 
 prebuilt_jar(
   name = "jooq",
-  binary_jar = ":jooq-jar",
+  binary_jar = ":jooq.jar",
 )
 
 remote_file(
-  name = "jooq-jar",
-  url = "mvn:org.jooq:jooq:jar:3.9.0",
-  sha1 = "0f8258ec9cd4ef8622e1f75084c51702ee9a5bb9",
+  name = "jooq.jar",
+  url = "mvn:org.jooq:jooq:jar:3.9.1",
+  sha1 = "f08a08b7103714cc94d8bca60958496aa181c6d4",
 )
